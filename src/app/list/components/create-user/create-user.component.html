@@ -1,0 +1,9 @@
+<div class="wrapper">
+    <form class="form" [formGroup]="createUserForm">
+        <label class="label">Name</label>
+        <input formControlName="name" type="text">
+        <label class="label">UserName</label>
+        <input formControlName="username" type="text">
+        <button type="submit" (click)="createUser()">Update</button>
+    </form>
+</div>

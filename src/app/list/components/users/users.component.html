@@ -1,0 +1,12 @@
+<div class="wrapper">
+    <div class="content" *ngFor="let user of users">
+    <div class="info">{{user.id}}</div>
+        <div class="info">{{user.name}}</div>
+        <div class="info">{{user.username}}</div>
+        <div class="actions">
+            <button (click)="userDetails(user.id)">Edit</button>
+            <button (click)="deleteUser(user.id)">Delete</button>
+        </div>
+    </div>
+    <button (click)="addUser()">Add user</button>
+</div>

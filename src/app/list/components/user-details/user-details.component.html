@@ -1,0 +1,9 @@
+<div class="wrapper">
+    <form class="form" [formGroup]="editUserForm">
+        <label class="label">Name</label>
+        <input formControlName="name" type="text">
+        <label class="label">UserName</label>
+        <input formControlName="userName" type="text">
+        <button type="submit" (click)="update()">Update</button>
+    </form>
+</div>
